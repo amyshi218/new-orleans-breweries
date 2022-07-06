@@ -4,6 +4,7 @@
   "description": "New Orleans Breweries",
   "main": "index.js",
   "scripts": {
+    "build": "webpack --mode production",
     "start": "nodemon server",
     "watch": "webpack -w"
   },
