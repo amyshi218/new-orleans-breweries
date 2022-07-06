@@ -9,7 +9,7 @@ export default function BreweryList({ breweries }) {
   return (
     <div style={{ width: '80%', margin: 'auto' }}>
       {!showDetails ? <ListGroup style={{ marginBottom: 30 }} >
-        {breweries.map((brewery, idx) => (
+        {breweries.map((brewery: any, idx: number) => (
           <ListGroup.Item action as="li" key={idx} onClick={() => { setShowDetails(true); setBreweryIdx(idx) }}>
             <dl>
               <dt><h4 style={{ color: '#6e4d23' }}>{brewery.name}</h4></dt>

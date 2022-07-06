@@ -24,3 +24,4 @@ $ npm run watch
 <img src="https://www.vectorlogo.zone/logos/js_webpack/js_webpack-ar21.svg" width="200">
 <img src="https://www.vectorlogo.zone/logos/google_maps/google_maps-icon.svg" width="200">
 <img src="https://www.vectorlogo.zone/logos/font-awesome/font-awesome-ar21.svg" width="200">
+<img src="https://www.vectorlogo.zone/logos/typescriptlang/typescriptlang-icon.svg" width="200">

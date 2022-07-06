@@ -6,10 +6,10 @@ const getAllBreweries = () => {
   return axios.get(breweryUrl)
 }
 
-const getCoordinates = (street, city, state) => {
+const getCoordinates = (street: string, city: string, state: string) => {
   let splitStreet = street.split(' ')
 
-  const addStreet = (splitStreet) => {
+  const addStreet = (splitStreet: Array<string>) => {
     let streetString = ''
     for (let i = 0; i < splitStreet.length - 1; i++) {
       streetString += splitStreet[i] + '+'
