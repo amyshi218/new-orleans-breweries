@@ -1,16 +1,16 @@
 import React, { useState, useEffect } from 'react'
 import Button from 'react-bootstrap/Button'
-import Map from './Map.jsx'
-import api from '../../server/apiconnect.js'
+import Map from './Map'
+import { getCoordinates } from '../../server/apiconnect'
 import Card from 'react-bootstrap/Card'
 
 export default function Details({ breweries, breweryIdx, setShowDetails }) {
-  const [lat, setLat] = useState()
-  const [lng, setLng] = useState()
+  const [lat, setLat] = useState<String>()
+  const [lng, setLng] = useState<String>()
 
   const getMap = () => {
     if (!breweries[breweryIdx].latitude) {
-      api.getCoordinates(breweries[breweryIdx].street, breweries[breweryIdx].city, breweries[breweryIdx].state)
+      getCoordinates(breweries[breweryIdx].street, breweries[breweryIdx].city, breweries[breweryIdx].state)
         .then((data) => {
           setLat(data.data.results[0].geometry.location.lat)
           setLng(data.data.results[0].geometry.location.lng)

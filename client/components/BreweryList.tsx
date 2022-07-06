@@ -1,10 +1,10 @@
 import React, { useState } from 'react'
 import ListGroup from 'react-bootstrap/ListGroup'
-import Details from './Details.jsx'
+import Details from './Details'
 
 export default function BreweryList({ breweries }) {
-  const [showDetails, setShowDetails] = useState(false)
-  const [breweryIdx, setBreweryIdx] = useState()
+  const [showDetails, setShowDetails] = useState<boolean>(false)
+  const [breweryIdx, setBreweryIdx] = useState<Number>()
 
   return (
     <div style={{ width: '80%', margin: 'auto' }}>
@@ -25,8 +25,6 @@ export default function BreweryList({ breweries }) {
         <Details breweries={breweries} breweryIdx={breweryIdx} setShowDetails={setShowDetails} />
       }
     </div >
-
-
   )
 }
 

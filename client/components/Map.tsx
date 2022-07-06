@@ -1,10 +1,10 @@
 import React from 'react'
 import GoogleMapReact from 'google-map-react'
-import Pin from './Pin.jsx'
+import Pin from './Pin'
 
 export default function Map({ latitude, longitude }) {
 
-  let defaultProps = {
+  const defaultProps = {
     center: {
       lat: Number(latitude),
       lng: Number(longitude)
@@ -19,11 +19,8 @@ export default function Map({ latitude, longitude }) {
         defaultCenter={defaultProps.center}
         center={defaultProps.center}
         defaultZoom={defaultProps.zoom}
-
       >
-
         <Pin lat={latitude} lng={longitude}></Pin>
-
       </GoogleMapReact>
     </div >
   )
