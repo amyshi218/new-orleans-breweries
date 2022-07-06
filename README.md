@@ -4,10 +4,12 @@
 New Orleans Breweries is a streamlined SPA listing breweries found in the city of New Orleans. The data is pulled from [OpenBreweryDB](https://www.openbrewerydb.org/). A user can click on each listing to view more details on the brewery. An interactive map is integrated with [Google Map React](https://www.npmjs.com/package/google-map-react) to show the location of the selected brewery.
 
 ###  Installation and Setup🚀
-git clone
-npm install
-npm run start
-npm run watch
+````
+$ git clone
+$ npm install
+$ npm run start
+$ npm run watch
+````
 
 ###  Technologies
 
