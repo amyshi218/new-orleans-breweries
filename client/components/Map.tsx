@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import GoogleMapReact from 'google-map-react'
 import Pin from './Pin'
 
@@ -16,7 +16,6 @@ export default function Map({ latitude, longitude }) {
     <div style={{ height: '40vh', width: '100%' }}>
       <GoogleMapReact
         bootstrapURLKeys={{ key: 'AIzaSyDm70MMhjCmsnYG9Qu_lYM0ZE1DzpTMZcE' }}
-        defaultCenter={defaultProps.center}
         center={defaultProps.center}
         defaultZoom={defaultProps.zoom}
       >

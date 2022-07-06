@@ -15,7 +15,7 @@ module.exports = {
       {
         test: /\.(ts|js)x?$/,
         exclude: /node_modules/,
-        use: 'babel-loader'
+        use: ['babel-loader']
       },
       {
         test: /\.s?[ac]ss$/,
@@ -29,5 +29,6 @@ module.exports = {
   mode: 'development',
   resolve: {
     extensions: ['.tsx', '.ts', '.js', '.png']
-  }
+  },
+  devtool: "source-map"
 }
