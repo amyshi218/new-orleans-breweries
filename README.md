@@ -4,8 +4,8 @@
 New Orleans Breweries is a streamlined SPA listing breweries found in the city of New Orleans. The data is pulled from [OpenBreweryDB](https://www.openbrewerydb.org/). A user can click on each listing to view more details on the brewery. An interactive map is integrated with [Google Map React](https://www.npmjs.com/package/google-map-react) to show the location of the selected brewery.
 
 ###  Installation and Setup🚀
-````
 To use Google Map React, you would need a google api key. Go to [Google Maps Platform](https://mapsplatform.google.com/) and get a google api key. Once you've obtained a key, created a config.js file in the same format as the configexample.js and insert your google api key where it says 'GOOGLE API KEY' in quotes.
+````
 
 $ git clone
 $ npm install
