@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import GoogleMapReact from 'google-map-react'
 import Pin from './Pin'
+import { googleAPIKey } from '../../config.js'
 
 export default function Map({ latitude, longitude }) {
 
@@ -15,7 +16,7 @@ export default function Map({ latitude, longitude }) {
   return (
     <div style={{ height: '40vh', width: '100%' }}>
       <GoogleMapReact
-        bootstrapURLKeys={{ key: 'AIzaSyDm70MMhjCmsnYG9Qu_lYM0ZE1DzpTMZcE' }}
+        bootstrapURLKeys={{ key: googleAPIKey }}
         center={defaultProps.center}
         defaultZoom={defaultProps.zoom}
       >
