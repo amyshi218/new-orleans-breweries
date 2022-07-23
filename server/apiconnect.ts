@@ -19,7 +19,7 @@ const getCoordinates = (street: string, city: string, state: string) => {
 
   const splitCity = city.split(' ')
 
-  let geocodeURL = `https://maps.googleapis.com/maps/api/geocode/json?address=${addStreet(splitStreet)},+${splitCity[0]}+${splitCity[1]},+${state}&key=${googleAPIKey}`
+  let geocodeURL = `https://maps.googleapis.com/maps/api/geocode/json?address=${addStreet(splitStreet)},+${splitCity[0]}+${splitCity[1]},+${state}&key=${googleAPIKey || process.env.google_api_key}`
 
   return axios.get(geocodeURL)
 }
