@@ -16,7 +16,7 @@ export default function Map({ latitude, longitude }) {
   return (
     <div style={{ height: '40vh', width: '100%' }}>
       <GoogleMapReact
-        bootstrapURLKeys={{ key: process.env.google_api_key }}
+        bootstrapURLKeys={{ key: process.env.REACT_APP_google_api_key }}
         center={defaultProps.center}
         defaultZoom={defaultProps.zoom}
       >
